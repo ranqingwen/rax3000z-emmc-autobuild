@@ -11,8 +11,8 @@
 固件默认选中软件包
 `f2fsck, losetup, mkf2fs, kmod-fs-f2fs, kmod-mmc, luci-app-ksmbd, luci-i18n-ksmbd-zh-cn, ksmbd-utils` 等
 
-添加集成软件包
-`cfdisk, htop, openssl-util, kmod-fuse, kmod-usb-net-ipheth, kmod-usb-net-rndis, luci-app-argon-config, luci-app-autoreboot, luci-app-diskman, luci-app-ksmbd, luci-app-nlbwmon, luci-app-openclash, luci-app-openvpn, luci-app-ttyd, luci-app-upnp, luci-app-usb-printer, luci-app-zerotier, luci-theme-argon`
+集成软件包
+`cfdisk, htop, openssl-util, kmod-fuse, kmod-usb-net-ipheth, kmod-usb-net-rndis, luci-app-argon-config, luci-app-autoreboot, luci-app-alist, luci-app-diskman, luci-app-dockerman, luci-app-frpc, luci-app-ksmbd, luci-app-lucky, luci-app-netdata, luci-app-nlbwmon, luci-app-openclash, luci-app-phtunnel, luci-app-quickstart, luci-app-store, luci-app-ttyd, luci-app-uhttpd, luci-app-upnp, luci-app-usb-printer, app-wolplus, luci-app-zerotier, luci-theme-argon`
 等并预置 openclash 内核
 
 加入由 [1715173329 天灵](https://github.com/1715173329) 使用 js 重写，[237大佬](https://www.right.com.cn/forum/?364126) 适配硬件 QoS 的 [luci-app-eqos-mtk](https://github.com/padavanonly/immortalwrt-mt798x/commit/7c8019ce4bcb1a79c01c517b62e49f059ca70049)
@@ -21,7 +21,7 @@
 在 Actions 选择该工作流手动点击 Run workflow 执行编译，等待固件编译完成上传至 releases 发布即可下载
 
 ### 配置说明
-- 默认 LAN IP 已更改为 `192.168.6.1`，可在 `scripts/diy.sh` 处修改
+- 默认 LAN IP 为 `192.168.23.254`，可在 `scripts/diy.sh` 处修改
 
 - 需要取消集成或添加其他软件包可在 `configs/rax3000m-emmc_mtksdk.config` 处参考注释内容自行修改或添加配置选项
 
@@ -70,6 +70,7 @@
 - [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 - [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
+- [AngelaCooljx/Actions-rax3000m-emmc](https://github.com/AngelaCooljx/Actions-rax3000m-emmc)
 
 ## License
 
