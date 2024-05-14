@@ -11,8 +11,8 @@
 固件默认选中软件包
 `kmod-mt7981-firmware, mt7981-wo-firmware, kmod-usb3, automount, f2fsck, mkf2fs` 等
 
-添加集成软件包
-`cfdisk, f2fs-tools, htop, openssl-util, kmod-fuse, kmod-usb-net-ipheth, kmod-usb-net-rndis, luci-app-argon-config, luci-app-autoreboot, luci-app-diskman, luci-app-ksmbd, luci-app-openclash, luci-app-openvpn, luci-app-ttyd, luci-app-upnp, luci-app-usb-printer, luci-app-zerotier, luci-theme-argon`
+集成软件包
+`cfdisk, htop, openssl-util, kmod-fuse, kmod-usb-net-ipheth, kmod-usb-net-rndis, luci-app-argon-config, luci-app-autoreboot, luci-app-alist, luci-app-diskman, luci-app-dockerman, luci-app-frpc, luci-app-ksmbd, luci-app-lucky, luci-app-netdata, luci-app-nlbwmon, luci-app-openclash, luci-app-phtunnel, luci-app-quickstart, luci-app-store, luci-app-ttyd, luci-app-uhttpd, luci-app-upnp, luci-app-usb-printer, app-wolplus, luci-app-zerotier, luci-theme-argon`
 等并预置 openclash 内核
 
 如需在线安装 kmod 内核模块类型软件包，你需要在 http://mirrors.pku.edu.cn/immortalwrt/releases/23.05-SNAPSHOT/targets/mediatek/filogic/packages/ 处手动查找下载 "kernel_5.15.\*_aarch64_cortex-a53.ipk" 该软件包并上传安装，之后即可正常在线安装其他 kmod 软件包
@@ -21,7 +21,7 @@
 在 Actions 选择该工作流手动点击 Run workflow 执行编译，等待固件编译完成上传至 releases 发布即可下载
 
 ### 配置说明
-- 默认 LAN IP 已更改为 `192.168.6.1`，可在 `scripts/diy.sh` 处修改
+- 默认 LAN IP 为 `192.168.23.254`，可在 `scripts/diy.sh` 处修改
 
 - 需要取消集成或添加其他软件包可在 `configs/rax3000m-emmc.config` 处参考注释内容自行修改或添加配置
 
