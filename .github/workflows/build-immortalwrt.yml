@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 使用ImmortalWrt开源驱动编译
+name: ImmortalWrt开源驱动编译
 
 permissions: write-all
 # 开启写权限，防止无法上传到release
