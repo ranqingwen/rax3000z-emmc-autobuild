@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build ImmortalWrt-mt798x
+name: H大闭源驱动编译
 
 permissions: write-all
 # 开启写权限，防止无法上传到release
@@ -17,17 +17,17 @@ on:
   workflow_dispatch:
     inputs:
       USE_MTWIFI_CFG:
-        description: 'Use mtwifi-cfg'
+        description: '使用OpenWrt原生无线控制界面'
         required: true
         default: true
         type: boolean
       USE_NX30PRO_EEPROM:
-        description: 'Use nx30pro eeprom'
+        description: '使用nx30pro的高功率eeprom'
         required: true
         default: true
         type: boolean
       USE_52MHZ:
-        description: 'Use 52MHz max-frequency'
+        description: '设置eMMC频率52MHz编译'
         required: true
         default: true
         type: boolean
